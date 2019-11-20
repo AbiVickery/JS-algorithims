@@ -19,16 +19,16 @@ console.log(nums);
 bubble(nums);
 
 // Insert sorter
-
-function insertSort(nums) {
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = 0; j < nums.length; j++) {
-            if (nums[i] < nums[j]) {
-                const spliced = nums.splice(i, 1);
-                nums.splice(j, 0, spliced[0]);
+let data = ['Luvfle', 'SkyHeart', 'SpK']
+function insertSort(data) {
+    for (let i = 0; i < data.length; i++) {
+        for (let j = 0; j < data.length; j++) {
+            if (data[i] < data[j]) {
+                const spliced = data.splice(i, 1);
+                data.splice(j, 0, spliced[0]);
             }
         }
     }
-    console.log(nums);
+    console.log(data);
 }
-insertSort(nums);
+insertSort(data);
