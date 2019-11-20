@@ -21,8 +21,8 @@ bubble(nums);
 // Insert sorter
 
 function insertSort(nums) {
-    for (let i = 0; i < Array.length; i++) {
-        for (let j = 0; j < Array.length; j++) {
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = 0; j < nums.length; j++) {
             if (nums[i] < nums[j]) {
                 const spliced = nums.splice(i, 1);
                 nums.splice(j, 0, spliced[0]);
