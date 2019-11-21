@@ -148,3 +148,6 @@ function stitch(spk1, spk2) {
 
 let mergeSortResults = mergeSort(nums);
 console.log('mergeSort Results: ', mergeSortResults)
+
+
+// return [...results, ...left, ...right];
