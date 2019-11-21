@@ -151,3 +151,45 @@ console.log('mergeSort Results: ', mergeSortResults)
 
 
 // return [...results, ...left, ...right];
+
+const quickSort = (nums) => {
+    if (nums.length <= 1) return nums;
+
+    const pivot = nums[nums.length - 1];
+    let left = [];
+    let right = [];
+    
+    for (let i = 0; i < nums.length-1; i++) {
+        if (nums[i] < pivot) {
+            left.push(nums[i]);
+        }
+        else {
+            right.push(nums[i]);
+        }
+    }
+    return [...quickSort(left), pivot, ...quickSort(right)];
+}
+
+
+function quickSort(data) {
+    if (data.length <= 1) {
+        return data;
+    }
+
+    let pivot = data.pop();
+    for (let i = 0; i < data.length; i++) {
+        if (data[i] < pivot) {
+            left.push(data[i]);
+        }
+        else {
+            right.push(data[i]);
+        }
+    }
+
+    let sortedLeft = quickSort(left);
+    let sortedRight = quickSort(right);
+
+    return [].concat(sortedLeft, pivot, sortedRight);
+}
+let quickSortResults = quickSort(nums);
+console.log('quickSort Results: ', quickSortResults);
