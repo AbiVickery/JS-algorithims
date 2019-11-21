@@ -155,7 +155,7 @@ console.log('mergeSort Results: ', mergeSortResults)
 const quickSort = (nums) => {
     if (nums.length <= 1) return nums;
 
-    const pivot = nums[nums.length - 1];
+    const pivot = nums.pop[nums.length - 1];
     let left = [];
     let right = [];
     
