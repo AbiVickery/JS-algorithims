@@ -316,12 +316,13 @@ let arrayList = new ArrayList();
 arrayList.push(2);
 arrayList.push(5);
 arrayList.push(7);
-
 arrayList.print();
-
+// ---
 let temp = arrayList.pop();
 console.log(temp);
 arrayList.print();
+// ---
 arrayList.push(8);
 arrayList.push(12);
 arrayList.push(13);
+arrayList.print();
