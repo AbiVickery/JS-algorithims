@@ -126,3 +126,25 @@ function mergeSort(data) {
 
     return stitch(sortedLeft, sortedRight);
 }
+
+function stitch(spk1, spk2) {
+    let result = [];
+
+    while(spk1.length && spk2.length) {
+        if (spk1[0] <= spk2[0]) {
+            result.push(spk1.shift());
+        }
+        else {
+            result.push(spk2.shift());
+        }
+    }
+
+    while(spk2.length) {
+        result.push(spk2.shift());
+    }
+
+    return result;
+}
+
+let mergeSortResults = mergeSort(nums);
+console.log('mergeSort Results: ', mergeSortResults)
