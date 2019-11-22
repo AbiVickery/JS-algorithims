@@ -326,3 +326,9 @@ arrayList.push(8);
 arrayList.push(12);
 arrayList.push(13);
 arrayList.print();
+// ---
+let temp2 = arrayList.get(2);
+console.log(temp2);
+arrayList.print();
+arrayList.delete(2);
+arrayList.print();
