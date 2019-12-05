@@ -332,3 +332,13 @@ console.log(temp2);
 arrayList.print();
 arrayList.delete(2);
 arrayList.print();
+
+let arrayList1 = new ArrayList();
+arrayList1.push(3);
+arrayList1.push(6);
+arrayList1.push(8);
+arrayList1.print();
+// ---
+let temp3 = arrayList1.pop();
+console.log(temp3);
+arrayList1.print();
